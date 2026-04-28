@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  cnh-ocr-api:
+    build: .
+    container_name: cnh-ocr-api
+    ports:
+      - "8010:8000"
+    restart: unless-stopped
